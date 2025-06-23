@@ -1,0 +1,10 @@
+root = true
+
+[*]
+
+indent_style = space            // Indentation style: space or tab
+indent_size = 2                 // Number of spaces per indentation level
+end_of_line = lf                // Line ending: lf (Unix), crlf (Windows), cr (old Mac)
+charset = utf-8                 // Character encoding: utf-8, utf-16be, utf-16le
+trim_trailing_whitespace = true // Remove trailing whitespace at the end of lines
+insert_final_newline = true     // Ensure file ends with a newline
