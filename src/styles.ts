@@ -4,15 +4,17 @@ const EstiloGlobal = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     list-style: none;
-    }
+    box-sizing: border-box;
+  }
 
-    body {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-  `
+  body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: ${(props) => props.theme.corDeFundo};
+  }
+`
 
 export default EstiloGlobal
 

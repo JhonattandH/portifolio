@@ -7,11 +7,12 @@ export const Descricao = styled(P)`
 `
 
 export const ButtonTema = styled.button`
-  background: #282a35;
+  background-color: ${(props) => props.theme.corPrincipal};
   font-size: 10px;
-  color: #eee;
+  color: ${(props) => props.theme.corSecundaria};
   padding: 8px;
   border-radius: 12px;
+  border: none;
   cursor: pointer;
 
   &:hover {
@@ -19,8 +20,14 @@ export const ButtonTema = styled.button`
     color: #fff;
   }
 `
+
 export const SidebarContainer = styled.div`
   position: sticky;
   top: 40px;
   left: 0;
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 `
