@@ -5,7 +5,8 @@ export type props = {
   fontsize?: number
 }
 
-const Title = (props: props) => (
-  <StyleTitle fontsize={props.fontsize}>{props.children}</StyleTitle>
+const Title = ({ children, fontsize }: props) => (
+  <StyleTitle fontsize={fontsize}>{children}</StyleTitle>
 )
+
 export default Title
